@@ -16,26 +16,26 @@
     - Acima de 40 Obesidade Grave;
 */
 
-const pesoKg = 67;
-const alturaCm = 1.80;
+const pesoKg = 63;
+const alturaCm = 1.75;
 
-const imc = pesoKg / Math.pow(altura, 2);
-console.log('IMC é:', IMC.toFixed(2));
+const imc = pesoKg / Math.pow(alturaCm, 2);
+console.log('IMC é:', imc.toFixed(2));
 
 
 if (imc < 18.5) {
     console.log('Abaixo do peso');
 
-} else if (imc >= 18.5 && IMC <= 25) {
+} else if (imc >= 18.5 && imc < 25) {
     console.log('Peso normal');
 
-} else if (imc > 25 && IMC <= 30) {
+} else if (imc >= 25 && imc < 30) {
     console.log('Acima do peso');
 
-} else if (imc > 30 && IMC <= 40) {
+} else if (imc >= 30 && imc < 40) {
     console.log('Obeso');
 
-} else if (imc > 40) {
+} else if (imc >= 40) {
     console.log('Obesidade Grave');
 
 }
