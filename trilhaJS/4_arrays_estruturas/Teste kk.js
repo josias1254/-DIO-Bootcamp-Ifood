@@ -1,8 +1,9 @@
 class Aluno {
-    constructor(nome, turma) {
-        this.nome = 'nome';
-        this.turma = 'turma';
+    constructor(nome, turma, media) {
+        this.nome = nome;
+        this.turma = turma;
         this.notas = [];
+        this.media = media;
         }
 
         calcularMedia() {
@@ -18,10 +19,17 @@ class Aluno {
     }
 }
 
+const gabriel = new Aluno('gabriel', 'primeiro');
+gabriel.notas.push(3,4,5);
+gabriel.media = gabriel.calcularMedia();
 
 
+const eduardo = new Aluno('eduardo', 'segundao');
+eduardo.notas.push(7,5,7);
+eduardo.media = eduardo.calcularMedia();
 
-const gabriel = new Aluno('gabriel', 'primeiro')
-gabriel.notas.push(3,4,5)
+
+console.log(gabriel,eduardo) 
+
 
 
